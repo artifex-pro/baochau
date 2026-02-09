@@ -70,3 +70,39 @@ button:focus-visible {
         background-color: #f9f9f9;
     }
 } */
+
+
+.hearts {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    bottom: -10vh;
+    left: var(--left);
+    width: var(--size);
+    height: var(--size);
+    opacity: var(--opacity);
+    animation: floatUp var(--dur) linear infinite;
+}
+
+.heart::before {
+    content: "❤";
+    font-size: var(--size);
+    color: rgba(255, 0, 90, 0.35);
+    display: block;
+    line-height: 1;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-120vh) translateX(var(--drift)) rotate(360deg);
+    }
+}
+
