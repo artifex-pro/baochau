@@ -138,7 +138,7 @@ export default function Page() {
                 {yesPressed ? (
                     <>
                         <img
-                            className="mt-2 h-[120px] w-auto"
+                            className="mt-2 h-[360px] w-auto"
                             src={new URL("img.png", import.meta.env.BASE_URL).toString()}
                             alt="extra cute"
                         />
