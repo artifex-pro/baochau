@@ -139,7 +139,7 @@ export default function Page() {
                     <>
                         <img
                             className="mt-2 h-[120px] w-auto"
-                            src={`${import.meta.env.BASE_URL}img.png`}
+                            src={new URL("img.png", import.meta.env.BASE_URL).toString()}
                             alt="extra cute"
                         />
 
