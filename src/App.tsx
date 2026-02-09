@@ -138,7 +138,7 @@ export default function Page() {
                 {yesPressed ? (
                     <>
                         <img
-                            className="mt-2 h-[240px] w-auto"
+                            className="mt-2 h-[120px] w-auto"
                             src={`${import.meta.env.BASE_URL}img.png`}
                             alt="extra cute"
                         />
