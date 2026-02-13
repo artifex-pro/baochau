@@ -134,7 +134,7 @@ export default function Page() {
             <FlyingHearts count={28} />
 
             {/* Content */}
-            <div className="-mt-16 relative z-10 flex h-screen flex-col items-center justify-center">
+            <div className="-mt-16 relative z-10 flex h-screen flex-col items-center justify-center text-center px-6">
                 {yesPressed ? (
                     <>
                         <img
@@ -151,17 +151,17 @@ export default function Page() {
                     <>
                     <div className="flex items-center justify-center gap-4">
                         <img
-                            className="h-[200px]"
+                            className="h-[120px] sm:h-[160px] md:h-[200px] w-auto"
                             src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHJwM3kxenM0c253Yjc2M2dnaXIwMzgxZXR0aDB2Z3p6ZGt2dTNtMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gCxd0kUSR6I9dflWgm/giphy.gif"
                             alt="cute bear"
                         />
                         <img
-                            className="h-[200px]"
+                            className="h-[120px] sm:h-[160px] md:h-[200px] w-auto"
                             src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2F5d2NoNWczcmhpbHlweDB1Nzh0czUwNWkxdXNmbnc4dHY2aG4yZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/6zAvc4UaGEvl2K1xv1/giphy.gif"
                             alt="cute bear"
                         />
                         <img
-                            className="h-[200px]"
+                            className="h-[120px] sm:h-[160px] md:h-[200px] w-auto"
                             src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHN1bDVjZnBkanYxd3AxaWUyMDR1MnA5emZvYnNsZzhmdXcyajUxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/v9VrsKHg32VMfv89lm/giphy.gif"
                             alt="cute bear"
                         />
