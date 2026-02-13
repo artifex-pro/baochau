@@ -6,7 +6,11 @@ function FlyingHearts({count = 28}: {count?: number}) {
     return (
         <div className="hearts pointer-events-none absolute inset-0 -z-0" aria-hidden="true">
             {Array.from({length: count}).map((_, i) => {
-                const sizePx = 40 + Math.random() * 36; // 12px → 48px
+                const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+                const base = isMobile ? 18 : 40;      // smaller minimum on mobile
+                const range = isMobile ? 18 : 36;     // smaller spread on mobile
+
+                const sizePx = base + Math.random() * range;
                 const size = `${sizePx}px`;
 
                 const opacity = 0.18 + (sizePx / 48) * 0.35;
